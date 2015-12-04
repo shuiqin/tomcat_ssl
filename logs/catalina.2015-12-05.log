@@ -1,0 +1,1505 @@
+十二月 05, 2015 12:05:26 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:05:26 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:05:29 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:05:30 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:05:30 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 4986 ms
+十二月 05, 2015 12:05:30 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:05:30 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:05:30 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:05:32 上午 org.apache.catalina.util.SessionIdGenerator createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [187] milliseconds.
+十二月 05, 2015 12:05:32 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:05:34 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:05:34 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:05:34 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:05:34 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:05:34 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:05:34 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 4757 ms
+十二月 05, 2015 12:08:15 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:08:16 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:08:45 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+十二月 05, 2015 12:10:18 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:10:18 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:10:19 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:10:19 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8080"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:10:20 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:10:20 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:10:20 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8443"]
+java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:10:20 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8443]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:10:20 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:10:20 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:10:20 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:10:20 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1541 ms
+十二月 05, 2015 12:10:20 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:10:20 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:10:20 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:10:20 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:10:21 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:10:21 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:10:21 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:10:21 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 981 ms
+十二月 05, 2015 12:10:21 上午 org.apache.catalina.core.StandardServer await
+严重: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:422)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:707)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+
+十二月 05, 2015 12:10:21 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:10:21 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:10:21 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:10:21 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:10:24 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:10:24 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:10:25 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:10:25 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8080"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:10:25 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:10:25 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:10:25 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8443"]
+java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:10:25 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8443]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:10:25 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:10:25 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:10:25 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:10:25 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1519 ms
+十二月 05, 2015 12:10:25 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:10:25 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:10:25 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:10:26 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:10:26 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:10:26 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:10:26 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:10:26 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1142 ms
+十二月 05, 2015 12:10:26 上午 org.apache.catalina.core.StandardServer await
+严重: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:422)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:707)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+
+十二月 05, 2015 12:10:26 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:10:26 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:10:26 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:10:26 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:12:54 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:12:54 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:12:55 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:12:55 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8080"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:12:55 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:12:55 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:12:55 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8443"]
+java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:12:55 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8443]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:12:55 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:12:55 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:12:55 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:12:55 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1494 ms
+十二月 05, 2015 12:12:55 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:12:55 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:12:55 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:12:56 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:12:56 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:12:56 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:12:56 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:12:56 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1098 ms
+十二月 05, 2015 12:12:56 上午 org.apache.catalina.core.StandardServer await
+严重: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:422)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:707)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+
+十二月 05, 2015 12:12:56 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:12:56 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:12:57 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:12:57 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:14:31 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:14:31 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:14:32 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:14:32 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8080"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:14:32 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:14:32 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:14:32 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8443"]
+java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:14:32 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8443]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:14:32 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:14:32 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:14:32 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:14:32 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 2403 ms
+十二月 05, 2015 12:14:33 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:14:33 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:14:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:14:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:14:34 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:14:34 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:14:34 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:14:34 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1435 ms
+十二月 05, 2015 12:14:34 上午 org.apache.catalina.core.StandardServer await
+严重: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:422)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:707)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+
+十二月 05, 2015 12:14:34 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:14:34 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:14:34 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:14:34 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:14:49 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:14:49 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:14:50 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:14:50 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8080"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:14:50 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:14:50 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:14:50 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8443"]
+java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:14:50 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8443]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:14:50 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:14:50 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:14:50 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:14:50 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1510 ms
+十二月 05, 2015 12:14:51 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:14:51 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:14:51 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:14:51 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:14:51 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:14:51 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:14:51 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:14:52 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1064 ms
+十二月 05, 2015 12:14:52 上午 org.apache.catalina.core.StandardServer await
+严重: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:422)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:707)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+
+十二月 05, 2015 12:14:52 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:14:52 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:14:52 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:14:52 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:27:03 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:27:03 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:27:04 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:27:04 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8080"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:27:04 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:27:04 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:27:04 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8443"]
+java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:27:04 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8443]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:27:04 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:27:04 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:27:04 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:408)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:27:04 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1434 ms
+十二月 05, 2015 12:27:04 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:27:04 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:27:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:27:05 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:27:05 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:27:05 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:27:05 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:27:05 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 879 ms
+十二月 05, 2015 12:27:05 上午 org.apache.catalina.core.StandardServer await
+严重: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:422)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:707)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+
+十二月 05, 2015 12:27:05 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:27:05 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:27:05 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:27:05 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:31:11 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:31:11 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:31:12 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:31:12 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:31:12 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-8443"]
+java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:31:12 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8443]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.lang.Exception: Connector attribute SSLCertificateFile must be defined when using SSL with APR
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:468)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:31:12 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:31:12 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1290 ms
+十二月 05, 2015 12:31:12 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:31:12 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:31:12 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:31:12 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:31:13 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:31:13 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:31:13 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:31:13 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:31:13 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:31:13 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1039 ms
+十二月 05, 2015 12:35:48 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:35:49 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8443"]
+十二月 05, 2015 12:35:49 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:35:50 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:35:50 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:35:50 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:35:55 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:35:55 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:35:56 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:35:56 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:35:58 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:35:58 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 2298 ms
+十二月 05, 2015 12:35:58 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:35:58 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:35:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:35:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:35:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:35:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:35:59 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:35:59 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:35:59 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:35:59 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:35:59 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1043 ms
+十二月 05, 2015 12:36:45 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:36:46 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:36:47 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:36:48 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:36:49 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:36:49 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:36:49 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:36:57 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:36:57 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:36:57 上午 org.apache.tomcat.util.net.AbstractEndpoint adjustRelativePath
+警告: configured file:[G:\software\tomcat7\.keystore] does not exist.
+十二月 05, 2015 12:36:58 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:36:58 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:36:58 上午 org.apache.tomcat.util.net.jsse.JSSESocketFactory getStore
+严重: Failed to load keystore type JKS with path G:\software\tomcat7\.keystore due to G:\software\tomcat7\.keystore (系统找不到指定的文件。)
+java.io.FileNotFoundException: G:\software\tomcat7\.keystore (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getStore(JSSESocketFactory.java:401)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeystore(JSSESocketFactory.java:307)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeyManagers(JSSESocketFactory.java:560)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeyManagers(JSSESocketFactory.java:506)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.init(JSSESocketFactory.java:450)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.createSocket(JSSESocketFactory.java:158)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:365)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:36:58 上午 org.apache.coyote.AbstractProtocolHandler init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-bio-8443"]
+java.io.FileNotFoundException: G:\software\tomcat7\.keystore (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getStore(JSSESocketFactory.java:401)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeystore(JSSESocketFactory.java:307)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeyManagers(JSSESocketFactory.java:560)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeyManagers(JSSESocketFactory.java:506)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.init(JSSESocketFactory.java:450)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.createSocket(JSSESocketFactory.java:158)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:365)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+十二月 05, 2015 12:36:58 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-8443]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:912)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:101)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:572)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:262)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+Caused by: java.io.FileNotFoundException: G:\software\tomcat7\.keystore (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getStore(JSSESocketFactory.java:401)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeystore(JSSESocketFactory.java:307)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeyManagers(JSSESocketFactory.java:560)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.getKeyManagers(JSSESocketFactory.java:506)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.init(JSSESocketFactory.java:450)
+	at org.apache.tomcat.util.net.jsse.JSSESocketFactory.createSocket(JSSESocketFactory.java:158)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:365)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:482)
+	at org.apache.coyote.AbstractProtocolHandler.init(AbstractProtocolHandler.java:354)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:910)
+	... 13 more
+
+十二月 05, 2015 12:36:58 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:36:58 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1533 ms
+十二月 05, 2015 12:36:58 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:36:58 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:36:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:36:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:36:59 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:36:59 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:36:59 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:36:59 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:36:59 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:36:59 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 936 ms
+十二月 05, 2015 12:37:53 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:37:54 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:37:54 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:37:55 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:37:55 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:37:55 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:37:59 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.20.
+十二月 05, 2015 12:37:59 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十二月 05, 2015 12:38:00 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:38:00 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:38:01 上午 org.apache.coyote.AbstractProtocolHandler init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1481 ms
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.12
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory host-manager
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory manager
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十二月 05, 2015 12:38:01 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:38:01 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:38:01 上午 org.apache.coyote.AbstractProtocolHandler start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:38:01 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 797 ms
+十二月 05, 2015 12:58:55 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:58:58 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:58:59 上午 org.apache.coyote.AbstractProtocolHandler pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+十二月 05, 2015 12:59:00 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+十二月 05, 2015 12:59:13 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["http-apr-8080"]
+十二月 05, 2015 12:59:13 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["http-bio-8443"]
+十二月 05, 2015 12:59:13 上午 org.apache.coyote.AbstractProtocolHandler stop
+信息: Stopping ProtocolHandler ["ajp-apr-8009"]
